@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-
+点击Android Studio的ReBuild Project，可以在在app的 build/generated/source/apt目录下，即可看到生成的代码。
 
 
 # 其他
