@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+//apply plugin: 'java'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+dependencies {
+    compile  fileTree(dir: 'libs', include: ['*.jar'])
+
+    //自动生成注解处理器
+    compile  'com.google.auto.service:auto-service:1.0-rc4'
+    //javapoet代码生成框架
+    compile  'com.squareup:javapoet:1.8.0'
+    //注解模块
+    compile  project(path: ':annotationlib')
+}
